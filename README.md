@@ -6,4 +6,4 @@
 
 ## [Front-End](frontend/)
 
-* _Vue_ + _CoreUI(Vue)_
+* _Vue_ + _CoreUI for Vue.js_
