@@ -1,9 +1,9 @@
 # Desafio .Net Core
 
-## Back-End
+## [Back-End](backend/)
 
-[Back-End](backend/)
+* _C#_ + _Entity Framework Core_ + _SQL Server Express_
 
-## Front-End
+## [Front-End](frontend/)
 
-[Front-End](frontend/)
+* _Vue_ + _CoreUI(Vue)_
