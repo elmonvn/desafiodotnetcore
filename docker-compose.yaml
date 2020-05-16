@@ -1,0 +1,30 @@
+version: "3.7"
+services:
+    db:
+        image: mcr.microsoft.com/mssql/server
+        container_name: db
+        restart: always
+        networks:
+            - dotnetcorenet
+        environment:
+            SA_PASSWORD: "Desafio2020"
+            ACCEPT_EULA: "Y"
+            MSSQL_PID: "Express"
+        ports:
+            - 1433:1433
+        volumes:
+            - mssqlvol:/var/opt/mssql
+    api:
+        build: ./backend/DesafioDotNetCoreBackEnd/
+        container_name: api
+        restart: always
+        networks:
+            - dotnetcorenet
+        ports:
+            - 5000:5000
+
+networks:
+    dotnetcorenet:
+
+volumes:
+    mssqlvol:
